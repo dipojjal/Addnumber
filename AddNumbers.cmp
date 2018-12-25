@@ -1,0 +1,13 @@
+<aura:component >
+	
+    <aura:attribute type="integer" name="number1" />
+    <aura:attribute type="integer" name="number2" />
+    <aura:attribute type="integer" name="result"  />
+    
+    <ui:inputText label="Number 1: " placeholder="Enter the first number" aura:id="num1" value="{!v.number1}"/>
+    <ui:inputText label="Number 2: " placeholder="Enter the second number" aura:id="num2" value="{!v.number2}"/>
+    Result: <ui:outputText value="{!v.result}" />
+    <br/><br/>
+    <lightning:button label="Submit" onclick="{!c.add}" />
+    
+</aura:component>
